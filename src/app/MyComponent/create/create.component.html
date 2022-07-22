@@ -1,0 +1,29 @@
+
+<div class="blogs">
+
+  <div class="head">
+    <h1>Create</h1>
+  </div>
+  <div class="blogitem">
+    <label for="">Title *</label><br />
+    <input type="text" id="tit" #bo required><br>
+
+    <label for="">Description *</label><br />
+    <textarea required id="des" #des rows="4" cols="50"></textarea>
+    <button (click)="bo.value='';des.value=''" id="cancel">Cancel</button>
+    <button (click)="post(bo.value,des.value);bo.value='';des.value=''" id="post">Post</button>
+
+
+
+  </div>
+
+ 
+  <ul>
+    <li *ngFor="let number of data">{{number.name}}</li>
+  </ul>
+
+</div>
+
+
+
+

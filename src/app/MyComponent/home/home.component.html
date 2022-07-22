@@ -1,0 +1,24 @@
+<div class="blogs">
+
+  <div class="head">
+    <h1>My Blog</h1>
+  </div>
+  <div class="blogitem">
+
+    <div class="blogno"
+         *ngFor="let i of item;let j=index;">
+     
+        <p style="font-weight:bold;margin-left:40%;">{{i.name}}</p>
+        <div class="read">
+          <p>{{i.dec}}</p>
+   
+        </div>
+         <button (click)="view(i.name,i.dec)" class="view">view</button>
+        
+      
+
+    </div>
+    
+
+  </div>
+</div>

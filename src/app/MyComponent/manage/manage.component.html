@@ -1,0 +1,32 @@
+<div class="blogs">
+
+  <div class="head">
+    <h1>Manage</h1>
+  </div>
+  <div class="blogitem">
+
+
+    
+   
+    <table class="table table-striped">
+      <tr>
+        <th>Sno</th>
+        <th>BlogTitle</th>
+        <th>Action</th>
+
+      </tr>
+      <tbody>
+        
+        <tr *ngFor="let i of item;let j=index;">
+          <td>{{j}}</td>
+          <td style="font-size:x-small">{{i.name}}</td>
+          <td>
+            <button (click)="view(i.name,i.dec)">View</button>
+            <button>Delete</button>
+            <button>Update</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
