@@ -52,13 +52,15 @@ input,textarea{
 #cancel {
   margin-left: 70%;
   margin-top:2%;
-  width:10%;
+  font-size: xx-small;
+width: fit-content;
   background-color: red;
   border-radius: 20px;
 }
 #post {
   margin-left: 5%;
-  width: 10%;
+   font-size: xx-small;
+  width: fit-content;
   background-color: green;
   border-radius: 20px;
 }
